@@ -81,15 +81,17 @@ A short critique for each twist
 
 ___________________________________________________________________________________________________________________________________________________________________
 
-🏛️ Core Concepts Implemented (5 Days of AI Course)
-Concept                              	 Implementation
-Tool Use / Function Calling            Web search, name extraction
-Sessions & Memory	                     MemoryBank storing user preferences
-Observability	Custom                   AgentTracer logs every step
-Self-Evaluation	                       Critic agent grading twist quality
-Agent-to-Agent Communication 
-Data flow                              Research → Write → Critic
-Deployment	                           Gradio interactive app
+## 🏛️ Core Concepts Implemented (5 Days of AI Course)
+
+| Concept                     | Implementation                          |
+|-----------------------------|------------------------------------------|
+| Tool Use / Function Calling | Web search, name extraction              |
+| Sessions & Memory           | MemoryBank storing user preferences      |
+| Observability               | Custom AgentTracer logs every step       |
+| Self-Evaluation             | Critic agent grading twist quality       |
+| Agent-to-Agent Communication| Data flow Research → Write → Critic      |
+| Deployment                  | Gradio interactive app                   |
+
 ___________________________________________________________________________________________________________________________________________________________________
 
 🚀 Try It Yourself
