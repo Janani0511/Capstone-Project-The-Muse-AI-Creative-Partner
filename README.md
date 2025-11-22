@@ -3,7 +3,6 @@
 A Multi-Agent System for Grounded Storytelling, Powered by Gemini
 
 🎥 YOUTUBE VIDEO
-## 🎥 Demo Video
 
 [![Watch the video](https://img.youtube.com/vi/BgzJmZUsFJY/0.jpg)](https://youtu.be/BgzJmZUsFJY?si=mdt1Uzw67SYymDAF)
 
