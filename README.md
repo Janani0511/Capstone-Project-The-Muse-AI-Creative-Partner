@@ -1,12 +1,13 @@
 ✨ The Muse – AI Creative Partner
 
 A Multi-Agent System for Grounded Storytelling, Powered by Gemini
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+___________________________________________________________________________________________________________________________________________________________________
 
 🎥 YOUTUBE VIDEO
 
 [![Watch the video](https://img.youtube.com/vi/BgzJmZUsFJY/0.jpg)](https://youtu.be/BgzJmZUsFJY?si=mdt1Uzw67SYymDAF)
 
+___________________________________________________________________________________________________________________________________________________________________
 
 📖 Project Overview
 
@@ -19,6 +20,8 @@ The Muse changes that.
 This isn’t just a chatbot — it’s an
 autonomous multi-agent creative partner
 that thinks, researches, critiques, and writes with you.
+
+___________________________________________________________________________________________________________________________________________________________________
 
 💡 What Problem Does It Solve?
 
@@ -37,6 +40,8 @@ The Muse solves all three:
 ✔ Generates grounded, creative twists
 
 ✔ Self-evaluates and filters low-quality ideas
+
+___________________________________________________________________________________________________________________________________________________________________
 
 🧠 System Architecture
 
@@ -74,14 +79,19 @@ A score
 
 A short critique for each twist
 
+___________________________________________________________________________________________________________________________________________________________________
+
 🏛️ Core Concepts Implemented (5 Days of AI Course)
-Concept	Implementation
-Tool Use / Function Calling	Web search, name extraction
-Sessions & Memory	MemoryBank storing user preferences
-Observability	Custom AgentTracer logs every step
-Self-Evaluation	Critic agent grading twist quality
-Agent-to-Agent Communication	Data flow: Research → Write → Critic
-Deployment	Gradio interactive app
+Concept                              	 Implementation
+Tool Use / Function Calling            Web search, name extraction
+Sessions & Memory	                     MemoryBank storing user preferences
+Observability	Custom                   AgentTracer logs every step
+Self-Evaluation	                       Critic agent grading twist quality
+Agent-to-Agent Communication 
+Data flow                              Research → Write → Critic
+Deployment	                           Gradio interactive app
+___________________________________________________________________________________________________________________________________________________________________
+
 🚀 Try It Yourself
 1. Run All Cells
 
@@ -109,6 +119,8 @@ Example starter:
 
 Watch the agents research → write → critique in real time.
 
+___________________________________________________________________________________________________________________________________________________________________
+
 🛠️ Tech Stack
 
 google-generativeai — Gemini 1.5 Flash & Pro
@@ -118,6 +130,8 @@ duckduckgo-search — Live factual grounding
 gradio — Web interface
 
 Python — Core logic
+
+___________________________________________________________________________________________________________________________________________________________________
 
 📦 Install Dependencies
 pip install -q -U google-generativeai duckduckgo-search gradio
@@ -132,6 +146,8 @@ demo.launch(share=True)
 
 This generates a temporary Gradio public link.
 
+___________________________________________________________________________________________________________________________________________________________________
+
 🌌 Features
 
 ✔ Multi-Agent Reasoning
@@ -144,6 +160,8 @@ This generates a temporary Gradio public link.
 
 ✔ Clean UI for story testing
 
+___________________________________________________________________________________________________________________________________________________________________
+
 📈 Future Improvements
 
 Replace MemoryBank with a vector database (Chroma / Pinecone)
@@ -153,6 +171,8 @@ Add access to specialized history/science databases
 Human-in-the-loop twist scoring
 
 Writer ↔ Critic debate for better refinement
+
+___________________________________________________________________________________________________________________________________________________________________
 
 💐 Conclusion
 
