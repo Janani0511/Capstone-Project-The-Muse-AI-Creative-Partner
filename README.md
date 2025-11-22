@@ -1,53 +1,62 @@
-The Muse – AI Creative Partner
+✨ The Muse – AI Creative Partner
 
 A Multi-Agent System for Grounded Storytelling, Powered by Gemini
 
+🎥 YOUTUBE VIDEO
+## 🎥 Demo Video
+
+[![Watch the video](https://img.youtube.com/vi/BgzJmZUsFJY/0.jpg)](https://youtu.be/BgzJmZUsFJY?si=mdt1Uzw67SYymDAF)
+
+
 📖 Project Overview
 
-Every writer knows the sting of the blank page, especially midway through a story. You’ve built a world, shaped characters… and suddenly the path ahead goes dark. Standard AI prompts often spit out clichés or break immersion with fake “facts.”
+Every writer knows the sting of the blank page — especially midway through a story.
+You’ve built a world, shaped characters… and suddenly the path ahead goes dark.
+Standard AI prompts often give clichés or break immersion with fake “facts.”
 
-The Muse aims to change that.
+The Muse changes that.
 
-This isn’t just a chatbot.
-This is an autonomous multi-agent creative partner that thinks, researches, critiques, and writes like a collaborator who brings both imagination and real-world grounding.
+This isn’t just a chatbot — it’s an
+autonomous multi-agent creative partner
+that thinks, researches, critiques, and writes with you.
 
 💡 What Problem Does It Solve?
 
-Fiction writers often get stuck because:
+Writers get stuck because:
 
-They don’t know what realistic event can happen next.
+They don’t know what realistic event comes next
 
-They want a twist that surprises, not something generic.
+They want fresh, surprising plot twists
 
-They can’t afford hallucinations that break historical or scientific believability.
+They can’t afford hallucinations or wrong facts
 
 The Muse solves all three:
 
-It researches real facts.
+✔ Researches real-world context
 
-It generates twists based on your story + real context.
+✔ Generates grounded, creative twists
 
-It self-evaluates and filters bad ideas before you ever see them.
+✔ Self-evaluates and filters low-quality ideas
 
 🧠 System Architecture
 
-The system is powered by three specialized AI agents:
+The system is powered by three specialized agents:
 
 🕵️‍♂️ 1. Researcher Agent – Grounding
 
-Breaks down the story into keywords.
+Breaks down the story into keywords
 
-Uses DuckDuckGo Search (via duckduckgo-search) to gather obscure factual context.
+Uses DuckDuckGo Search to find obscure facts
 
-Returns real-world anchors the story can build upon.
+Provides real-world anchors for the plot
 
 ✍️ 2. Writer Agent – Creativity
 
-Ingests the story + research.
+Ingests story + research
 
-Reads user writing style + long-term preferences from a MemoryBank.
+Uses MemoryBank for user preferences
 
-Produces three original, surprising, fact-based plot twists.
+Produces three surprising, fact-based twists
 
 ⚖️ 3. Critic Agent – Evaluation
 
@@ -55,46 +64,50 @@ Grades each twist for:
 
 Creativity
 
-Use of real facts
+Factual grounding
 
 Overall quality
 
-Provides a score and mini-review for every twist.
+Then provides:
 
-🏛️ Core Concepts Implemented (From “5 Days of AI” Course)
+A score
+
+A short critique for each twist
+
+🏛️ Core Concepts Implemented (5 Days of AI Course)
 Concept	Implementation
 Tool Use / Function Calling	Web search, name extraction
-Sessions & Memory	User preferences stored in a MemoryBank
+Sessions & Memory	MemoryBank storing user preferences
 Observability	Custom AgentTracer logs every step
-Self-Evaluation	Critic agent grades twist quality
-Agent-to-Agent Communication	Writer uses Researcher + Memory output
-Deployment	Gradio-based interactive interface
+Self-Evaluation	Critic agent grading twist quality
+Agent-to-Agent Communication	Data flow: Research → Write → Critic
+Deployment	Gradio interactive app
 🚀 Try It Yourself
 1. Run All Cells
 
-The notebook installs dependencies and loads models.
+Installs dependencies and loads models.
 
 2. Scroll to the Bottom
 
-You’ll see the full Gradio UI with:
+You’ll see the full Gradio UI, including:
 
 Story input
 
 Style selector
 
-“Generate Twists” button
+Generate button
 
-Agent logs panel (live trace)
+Observability logs
 
-3. Paste Your Story Draft
+3. Paste a Story Draft
 
 Example starter:
 
-The year is 1854 in Soho, London…
+“The year is 1854 in Soho, London…”
 
-4. Hit “Generate Twists”
+4. Click “Generate Twists”
 
-Watch the agents research, write, critique — all in real time.
+Watch the agents research → write → critique in real time.
 
 🛠️ Tech Stack
 
@@ -102,9 +115,9 @@ google-generativeai — Gemini 1.5 Flash & Pro
 
 duckduckgo-search — Live factual grounding
 
-gradio — Web UI
+gradio — Web interface
 
-Python — Orchestration and logic
+Python — Core logic
 
 📦 Install Dependencies
 pip install -q -U google-generativeai duckduckgo-search gradio
@@ -113,46 +126,37 @@ pip install -q -U google-generativeai duckduckgo-search gradio
 import google.generativeai as genai
 genai.configure(api_key="YOUR_API_KEY")
 
-📝 Running the App
+📝 Run the App
 demo.launch(share=True)
 
 
-This generates a temporary public URL via Gradio.
+This generates a temporary Gradio public link.
 
 🌌 Features
+
 ✔ Multi-Agent Reasoning
 
-Each agent is specialized, making the system more reliable than a single prompt.
+✔ Research-driven plot twists
 
-✔ Research-Driven Plot Twists
+✔ Automatic twist scoring
 
-No hallucinations. Twists come from real facts.
+✔ Real-time observability logs
 
-✔ Self-Evaluation via Critic Agent
-
-Bad twists get filtered out before reaching you.
-
-✔ Live Observability Logs
-
-Watch the "thinking" and tool usage as it happens.
-
-✔ Interactive UI
-
-Clean Gradio interface for writers of any skill level.
+✔ Clean UI for story testing
 
 📈 Future Improvements
 
-Replace MemoryBank with a real vector database (ChromaDB / Pinecone)
+Replace MemoryBank with a vector database (Chroma / Pinecone)
 
-Give the Researcher access to specialized historical/scientific datasets
+Add access to specialized history/science databases
 
-Let users upvote/downvote twist quality (human-in-the-loop)
+Human-in-the-loop twist scoring
 
-Add iterative debate between Writer ↔ Critic for better twist refinement
+Writer ↔ Critic debate for better refinement
 
 💐 Conclusion
 
-The Muse is a glimpse into the future of creative tools — part historian, part writer, part editor.
-It blends imagination with truth, crafting twists that feel lived-in, unpredictable, and grounded.
+The Muse is a creative partner — part historian, part writer, part editor.
+It blends imagination with real-world truth, crafting twists that feel lived-in and surprising.
 
 A companion for every storyteller.
